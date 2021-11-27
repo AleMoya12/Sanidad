@@ -707,6 +707,9 @@ a:hover {
 .basic-4 {
 	width: 100%;
 	height: 500px;
+	background-image: url(../images/fondo-logos.jpg);
+	background-size: contain;
+	background-position: center;
 }
 
 
