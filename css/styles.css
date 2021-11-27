@@ -705,13 +705,8 @@ a:hover {
 /*     Invitation     */
 /**********************/
 .basic-4 {
-	padding-top: 9.25rem;
-	padding-bottom: 9.75rem;
-	text-align: center;
-}
-
-.basic-4 h4 {
-	margin-bottom: 2rem;
+	width: 100%;
+	height: 500px;
 }
 
 
@@ -745,6 +740,81 @@ a:hover {
 	padding: 0;
 }
 
+/* slider clientes */
+.clients {
+	padding: 100px 0;
+  }
+  
+ 
+  
+  .section-heading {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 100px;
+	color: #333;
+  }
+  
+  .carousel {
+	max-width: 1440px;
+	margin: 0 auto;
+	width: 95%;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+	content: "";
+	width: 200px;
+	height: 100%;
+	position: absolute;
+  }
+  
+  .carousel::before {
+	background-image: linear-gradient(
+	  to left,
+	  rgba(255, 255, 255, 0) 0,
+	  #fff 100%
+	);
+	z-index: 1;
+  }
+  
+  .carousel::after {
+	background-image: linear-gradient(
+	  to left,
+	  #fff 0,
+	  rgba(255, 255, 255, 0) 100%
+	);
+	right: 0;
+  }
+  
+  .carousel .client-banners {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	animation: slide 20s linear infinite;
+  }
+  
+  .client-banners img {
+	max-height: 100%;
+	margin: 0 50px;
+  }
+  
+  @keyframes slide {
+	from {
+	  transform: translateX(0);
+	}
+  
+	to {
+	  transform: translateX(-100%);
+	}
+  }
+  
 
 /************************/
 /*     Testimonials     */
