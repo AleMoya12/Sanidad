@@ -137,9 +137,16 @@ a:hover {
 }
 
 .bg-gray {
-	background-color: #f9fafe;
+	background: linear-gradient(to left, #1a42e4 0%, #f9fafe 100%);
+	
 }
-
+.bg-gray-light {
+	background-color: #f9fafe;
+	background-image: url(../images/op.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
@@ -510,10 +517,31 @@ a:hover {
 .basic-1 {
 	padding-top: 9.25rem;
 	padding-bottom: 8.75rem;
+	position: relative;
+}
+.basic-1::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #080808b4;
+	opacity: 0.5;
+	z-index: 1;
 }
 
 .basic-1 h2 {
 	margin-bottom: 1.75rem;
+	color: #fefeff;
+	z-index: 2;
+}
+.basic-1 p {
+	margin-bottom: 1.75rem;
+	color: white;
+	z-index: 22;
+	font-weight: bold;
 }
 
 
@@ -613,16 +641,16 @@ a:hover {
 	width: 90px;
 	height: 90px;
 	margin-right: auto;
-	margin-bottom: 1.5rem;
 	margin-left: auto;
 	border-radius: 50%;
-	background-color: #ffffff;
+	background-color: #f5f2f2;
 	text-align: center;
 }
 
 .cards-1 .card-icon .far,
 .cards-1 .card-icon .fas {
-	margin-left: 2rem;
+	margin: auto;
+	margin-top: 13px;
 	color: #cc2973;
 	font-size: 3.75rem;
 }
