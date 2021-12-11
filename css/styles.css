@@ -1109,7 +1109,12 @@ a:hover {
 /*************************/
 /*     Media Queries     */
 /*************************/	
+@media (min-width: 300px) {
+	.bg-gray-light{
+		background-position: left top;
+}
 
+}
 
 /* Min-width 768px */
 @media (min-width: 768px) {
