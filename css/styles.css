@@ -1120,6 +1120,7 @@ a:hover {
 @media (min-width: 768px) {
 	.bg-gray-light{
 		background-position: center;
+		min-height: 500px;
 }
 	/* Header */
 	.header {
